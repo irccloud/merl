@@ -27,6 +27,9 @@
 %% NOTE: We cannot use inline metavariables or any other parse transform
 %% features in this module, because it must be possible to compile it with
 %% the parse transform disabled!
+-ifndef(MERL_NO_TRANSFORM).
+-define(MERL_NO_TRANSFORM, 1).
+-endif.
 -include("../include/merl.hrl").
 
 %% TODO: unroll calls to switch? it will probably get messy
