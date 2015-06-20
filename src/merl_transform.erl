@@ -28,7 +28,7 @@
 %% features in this module, because it must be possible to compile it with
 %% the parse transform disabled!
 -ifndef(MERL_NO_TRANSFORM).
--define(MERL_NO_TRANSFORM, 1).
+-define(MERL_NO_TRANSFORM, true).
 -endif.
 -include("../include/merl.hrl").
 

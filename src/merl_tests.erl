@@ -17,7 +17,9 @@
 
 -module(merl_tests).
 
-%-define(MERL_NO_TRANSFORM, true).
+-ifndef(MERL_NO_TRANSFORM).
+-define(MERL_NO_TRANSFORM, true).
+-endif.
 -include("../include/merl.hrl").
 
 -include_lib("eunit/include/eunit.hrl").
