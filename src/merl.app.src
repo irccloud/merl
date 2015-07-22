@@ -1,7 +1,10 @@
 %%-*- mode: erlang -*-
 {application, merl,
  [
-  {description, "merl"},
-  {vsn, "1"}
+  {description, "Metaprogramming in Erlang"},
+  {vsn, "irccloud-rebar3-0.9"},
+  {modules, [merl, merl_tests, merl_transform]},
+  {applications, [kernel, stdlib, compiler, syntax_tools]},
+  {registered, []}
  ]}.
 
