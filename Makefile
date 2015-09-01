@@ -10,7 +10,7 @@ DOC_OPTS={def,{version,\"$(VSN)\"}}
 all: $(OBJECTS)
 
 ebin/%.beam: src/%.erl $(HEADERS) Makefile
-	erlc -pz ./priv -pa ./ebin $(ERLC_FLAGS) -o ebin/ $<
+	erlc -pz ./priv -pa ./ebin $(ERLC_FLAGS) -o ebin/ +debug_info $<
 
 # additional dependencies due to the parse transform
 ebin/merl_tests.beam ebin/merl_build.beam: \
